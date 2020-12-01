@@ -28,8 +28,8 @@ OS: Windows 10
  - zookeeper 서버 실행(각 cmd 창에서) : $ zookeeper-server-start.bat ../../config/zookeeper.properties
  - kafka 서버 실행(각 cmd 창에서) : $ kafka-server-start.bat ../../config/server.properties
  
- > 수행 도중 Connection 오류 등 오류 발생시 : 
-   > kafka-server-stop.bat → zookeeper-server-stop.bat (역순으로 종료)
+ > 수행 도중 Connection 오류 등 오류 발생시 : \n
+   > kafka-server-stop.bat → zookeeper-server-stop.bat (역순으로 종료) \n
    > 카프카 폴더 경로(C:)내 tmp 폴더 내 로그 삭제 (C:tmp)
 
 ----
