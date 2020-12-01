@@ -1,13 +1,13 @@
 # edu_cna_project
 
-OS: Windows 10
+#### OS: Windows 10
 
 ## [Prerequsite]
 
-### [REST Client Tool](https://github.com/TheOpenCloudEngine/uEngine-cloud/wiki/Httpie-설치)
+### [1.REST Client Tool](https://github.com/TheOpenCloudEngine/uEngine-cloud/wiki/Httpie-설치)
 - $ pip install -U httpie
 
-### [Create Springboot Project](https://start.spring.io/)
+### [2.Create Springboot Project](https://start.spring.io/)
 - Project : Maven Project
 - Language : Java
 - Springboot : 2.4.0
@@ -19,7 +19,7 @@ OS: Windows 10
   Java : 8
 - Dependencies: H2 Database, Spring Data JAP, Rest Repositories
 
-### [Kafka](https://blusky10.tistory.com/366) 
+### [3.Kafka](https://blusky10.tistory.com/366) 
  - Type : Message Broker(Pub/Sub)
  - #### [Exexcution]
  - cmd 실행(Powershell 보다는 cmd에서 수행) 
@@ -35,7 +35,7 @@ OS: Windows 10
 
 ----
 
-## Publish Monitoring (CMD 창 4개 필요: 1, 2, 3, 5)
+## 4.Publish Monitoring (CMD 창 4개 필요: 1, 2, 3, 5)
 
  1. zookeeper 서버 실행(각 cmd 창에서)
  2. kafka 서버 실행(각 cmd 창에서) 
@@ -43,4 +43,4 @@ OS: Windows 10
  4. (Execute Subscriber) kafka-console-consumer.bat --bootstrap-server http://localhost:9092 --topic shop --from-beginning 
  5. Springboot 'demo' Project 실행 
  6. http POST localhost:8080/products name=“V” stock=10 
- 7. 3-2번 cmd에서 subscribe 로그 확인
+ 7. 4번 cmd에서 subscribe 로그 확인
