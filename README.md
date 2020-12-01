@@ -30,6 +30,7 @@ OS: Windows 10
  
  > 수행 도중 Connection 오류 등 오류 발생시 :
    > > kafka-server-stop.bat → zookeeper-server-stop.bat (역순으로 종료) 
+   > 
    > > 카프카 폴더 경로(C:)내 tmp 폴더 내 로그 삭제 (C:tmp)
 
 ----
@@ -38,8 +39,8 @@ OS: Windows 10
 
  1. zookeeper 서버 실행(각 cmd 창에서)
  2. kafka 서버 실행(각 cmd 창에서) 
- 3-1. $ cd C:\kafka_2.12-2.6.0\bin\windows 
- 3-2. kafka-console-consumer.bat --bootstrap-server http://localhost:9092 --topic shop --from-beginning 
- 4. Springboot 'demo' Project 실행 
- 5. http POST localhost:8080/products name=“V” stock=10 
- 6. 3-2번 cmd에서 subscribe 로그 확인
+ 3. (Move to Kafka dir) $ cd C:\kafka_2.12-2.6.0\bin\windows 
+ 4. (Execute Subscriber) kafka-console-consumer.bat --bootstrap-server http://localhost:9092 --topic shop --from-beginning 
+ 5. Springboot 'demo' Project 실행 
+ 6. http POST localhost:8080/products name=“V” stock=10 
+ 7. 3-2번 cmd에서 subscribe 로그 확인
