@@ -21,7 +21,7 @@ OS: Windows 10
 
 ### [Kafka](https://blusky10.tistory.com/366) 
  - Type : Message Broker(Pub/Sub)
- #### [Exexcution]
+ - #### [Exexcution]
  - cmd 실행(Powershell 보다는 cmd에서 수행) 
  - Move to directory (C 디렉토리 바로 아래 저장)
  - $ cd C:\kafka_2.12-2.6.0\bin\windows
