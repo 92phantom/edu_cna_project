@@ -29,12 +29,14 @@ OS: Windows 10
  - kafka 서버 실행(각 cmd 창에서) : $ kafka-server-start.bat ../../config/server.properties
  
  > 수행 도중 Connection 오류 등 오류 발생시 : 
-   1) kafka-server-stop.bat → zookeeper-server-stop.bat (역순으로 종료)
-   2) 카프카 폴더 경로(C:)내 tmp 폴더 내 로그 삭제 (C:tmp)
-  
-### Publish Monitoring (CMD 창 4개 필요: 1, 2, 3, 5)
+   > kafka-server-stop.bat → zookeeper-server-stop.bat (역순으로 종료)
+   > 카프카 폴더 경로(C:)내 tmp 폴더 내 로그 삭제 (C:tmp)
 
- 1 zookeeper 서버 실행(각 cmd 창에서)
+----
+
+## Publish Monitoring (CMD 창 4개 필요: 1, 2, 3, 5)
+
+ - 1 zookeeper 서버 실행(각 cmd 창에서)
  2 kafka 서버 실행(각 cmd 창에서) 
  3-1 $ cd C:\kafka_2.12-2.6.0\bin\windows 
  3-2 kafka-console-consumer.bat --bootstrap-server http://localhost:9092 --topic shop --from-beginning 
